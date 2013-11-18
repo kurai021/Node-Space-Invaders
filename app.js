@@ -31,7 +31,7 @@ Module dependencies.
     return stylus(str).set("filename", path).use(nib());
   };
 
-  app.set("port", process.env.PORT || 8000);
+  app.set("port", process.env.PORT || 80);
 
   app.set("views", path.join(__dirname, "views"));
 
