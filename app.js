@@ -7,7 +7,7 @@ Module dependencies.
 (function() {
   var app, compile, express, http, jade, nib, path, routes, stylus, user;
 
-  require('nko')("Gmazt4YixQu2r1Od");
+  //require('nko')("Gmazt4YixQu2r1Od");
 
   express = require("express");
 
