@@ -1,7 +1,7 @@
 ###
 Module dependencies.
 ###
-require('nko') "Gmazt4YixQu2r1Od"
+#require('nko') "Gmazt4YixQu2r1Od"
 
 express = require("express")
 jade = require("jade")
