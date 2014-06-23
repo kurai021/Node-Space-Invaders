@@ -3,7 +3,6 @@
 Module dependencies.
 */
 
-
 (function() {
   var app, compile, express, http, jade, nib, path, routes, stylus, user;
 

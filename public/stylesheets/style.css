@@ -3,9 +3,6 @@
   font-style: bold;
   src: url("ATARCC__.TTF");
 }
-html {
-  height: 100%;
-}
 body {
   background-color: #111;
   margin-top: 0px;
@@ -19,6 +16,7 @@ body {
   -o-animation: transition 360s linear 0s infinite;
   -ms-animation: transition 360s linear 0s infinite;
   animation: transition 360s linear 0s infinite;
+  overflow-y: hidden;
 }
 #marker_score {
   background-color: #000;
@@ -28,9 +26,15 @@ body {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   float: right;
-  width: 400px;
-  margin-top: 10px;
+  width: 30%;
+  margin: 10px;
   font-family: Sans;
+}
+#marker_score #round {
+  font-size: 1.2rem;
+}
+#marker_score #score {
+  font-size: 1.2rem;
 }
 #main {
   margin-right: auto;
@@ -41,12 +45,15 @@ body {
   border-color: #ccc;
   background-color: rgba(0,0,0,0.4);
   padding: 2px;
-  width: 900px;
-  height: 600px;
+  width: 60%;
+  height: 500px;
   float: left;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
+}
+#main #myCanvas {
+  width: 100%;
 }
 #webcam {
   display: none;
@@ -63,8 +70,8 @@ body {
   border-radius: 5px;
   background-color: #000;
   padding: 2px;
-  width: 900px;
-  height: 600px;
+  width: 60%;
+  height: 500px;
 }
 .page-header {
   font-family: helvetica;
