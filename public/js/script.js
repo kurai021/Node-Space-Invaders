@@ -108,7 +108,7 @@ window.onload = function () {
 function showPopup() {
     var twitterURL = "https://twitter.com/intent/tweet?url=";
     //var twitterParamURL=encodeURIComponent(document.URL);
-    var twitterParamURL=encodeURIComponent("http://www.webcamspaceinvaders.t99.es");
+    var twitterParamURL=encodeURIComponent("https://node-space-invaders.herokuapp.com/");
     var twitterPostfix="&original_referer=https://dev.twitter.com/docs/intents#tweet-intent";
     var tags="&hashtags="+encodeURIComponent("html5,webrtc,spaceinvaders");
     var text="&text=" + encodeURIComponent("I had a score of: " + score + " in Webcam Space Invaders");
@@ -155,8 +155,8 @@ function webcam() {
     var param = {video:true};
     console.log(param);
     window.navigator.getUserMedia(param, function(stream) {
-        if (window.webkitURL) {
-            video.src = window.webkitURL.createObjectURL(stream);
+        if (window.URL) {
+            video.src = window.URL.createObjectURL(stream);
         } else {
             video.src = stream;
             video.play();
@@ -211,7 +211,7 @@ function blend() {
                         var rndX = Math.round(Math.random());
                         var rndY = Math.round(Math.random());
 
-                        
+
                     }
 
                     // besides letter pixel we also check if it
@@ -428,7 +428,7 @@ function drawScore() {
             toWrite = "round:"+ Math.min(10,round) + "/10" + " points:" + score;
         }
         testWriteAscii(toWrite,0,nY-8);
-        
+
         $("#round").text("Round: " + round + "/10");
         $("#score").text("Score: " + score);
 }
@@ -530,7 +530,7 @@ function setState(x, y, state, source, force) {
     if (state == 0) {
         color = "#000";
     } else {
-        color = "#000";
+        color = "#7000AC";
     }
 
     // only draw something when the current state of this source is changed.
