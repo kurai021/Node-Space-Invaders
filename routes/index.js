@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Webcam Space Invaders' });
+    res.render('index', { title: 'Node Space Invaders' });
 };
